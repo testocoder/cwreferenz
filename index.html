@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Für was steht CW? · Crushconnect</title>
+  <meta name="description" content="Eine Bewerbung, die keine ist. Eine Idee, die du cool finden könntest.">
+  <link rel="icon" type="image/png" href="assets/proteinriegel.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <button class="home-btn" data-goto="start" title="Zur Startseite">
+      <img src="assets/proteinriegel.png" alt="More Proteinriegel, zurück zur Startseite">
+    </button>
+    <button class="back-btn" id="backBtn" title="Eine Seite zurück">
+      <span class="back-arrow">←</span> Zurück
+    </button>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== START ===================== -->
+    <section class="screen" id="start">
+      <div class="container">
+        <div class="hero">
+          <img src="assets/hero-protein-treasure.png" alt="Ein Mann schwimmt im More-Nutrition-Produktschatz">
+          <div class="hero-badge">Streng geheime Seite 🤫</div>
+        </div>
+
+        <p class="kicker">Zugangskontrolle · diese Seite ist vor Idioten geschützt</p>
+        <h1>Für was steht <span class="grad">CW</span>?</h1>
+
+        <div class="btn-row">
+          <button class="btn btn-choice" data-goto="falsch">Christian&nbsp;Wolf</button>
+          <button class="btn btn-choice" data-goto="falsch">Colaweizen</button>
+        </div>
+
+        <p class="footnote">Keine Sorge, die Frage ist fair. Es gibt genau eine richtige Antwort.</p>
+      </div>
+    </section>
+
+    <!-- ===================== FALSCH ===================== -->
+    <section class="screen" id="falsch">
+      <div class="container center">
+        <div class="big-emoji shake">🚨</div>
+        <h1 class="mega">FALSCH,<br><span class="grad">DU IDIOT.</span></h1>
+        <p class="lead">Aber heute ist dein Glückstag:<br>Du darfst die Seite <b>trotzdem</b> betreten.</p>
+        <button class="btn btn-primary btn-xl" data-goto="referenzen">Weiter →</button>
+      </div>
+    </section>
+
+    <!-- ===================== REFERENZPROJEKTE ===================== -->
+    <section class="screen" id="referenzen">
+      <div class="container center">
+        <p class="kicker">Wie in der Aufgabe gefordert</p>
+        <h1>Referenz&shy;projekte</h1>
+        <p class="lead">Such dir eins aus. Beide sind <i>wirklich</i> gut geworden.</p>
+
+        <div class="ref-grid">
+          <button class="ref-card" data-goto="sorry">
+            <span class="ref-emoji">📖</span>
+            <span class="ref-label">Testcase 1</span>
+            <span class="ref-title">Das E-Book</span>
+            <span class="ref-cta">Ansehen →</span>
+          </button>
+          <button class="ref-card" data-goto="sorry">
+            <span class="ref-emoji">🔎</span>
+            <span class="ref-label">Testcase 2</span>
+            <span class="ref-title">Web-App zur Video-Recherche</span>
+            <span class="ref-cta">Ansehen →</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SORRY ===================== -->
+    <section class="screen" id="sorry">
+      <div class="container center narrow">
+        <div class="big-emoji">🙈</div>
+        <h1>Ähm… ja.<br>Wegen der Projekte…</h1>
+        <p class="lead">
+          Es tut mir leid, Chris. Ich hatte leider keine Zeit, deine zwei Projekte umzusetzen.
+          Trotzdem habe ich mir die Mühe gemacht, diese Webseite zu bauen, um <b>dich</b> zu erreichen.
+        </p>
+        <p class="lead">
+          Im Gegenzug wäre ich dir sehr dankbar, wenn du dir exakt
+          <b class="grad-text">3,141592653&nbsp;Minuten</b> Zeit nimmst, um dir meine Idee anzuhören.
+          Gut möglich, dass du sie cool findest.
+        </p>
+        <div class="btn-row">
+          <button class="btn btn-primary btn-xl" data-goto="crushconnect">Ja, hau raus die Idee 🚀</button>
+          <button class="btn btn-ghost btn-xl" data-goto="crushconnect">Verpiss dich, ich hab keine Zeit</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CRUSHCONNECT ===================== -->
+    <section class="screen" id="crushconnect">
+      <div class="container center">
+        <div class="timer-pill" id="timerPill">⏳ Deine π Minuten laufen: <b id="piTimer">3:08,50</b></div>
+
+        <h1 class="mega grad title-pop">CRUSH<wbr>CONNECT</h1>
+        <p class="tagline">Tinder war gestern. Anonym. Ohne App.<br class="mobile-br"> Direkt auf Instagram.</p>
+        <a class="live-badge" href="https://instagram.com/crshconnect_de" target="_blank" rel="noopener">
+          <span class="live-dot"></span> Läuft bereits live · @crshconnect_de
+        </a>
+
+        <div class="tiles">
+          <button class="tile" data-detail="detail-idee">
+            <span class="tile-emoji">💡</span>
+            <span class="tile-title">Die Idee</span>
+            <span class="tile-sub">Was Crushconnect macht</span>
+          </button>
+          <button class="tile" data-detail="detail-chris">
+            <span class="tile-emoji">🎯</span>
+            <span class="tile-title">Warum du, Chris?</span>
+            <span class="tile-sub">Welche Rolle spielst du dabei?</span>
+          </button>
+          <button class="tile" data-detail="detail-beispiele">
+            <span class="tile-emoji">💬</span>
+            <span class="tile-title">Live-Beispiele</span>
+            <span class="tile-sub">So redet der Bot</span>
+          </button>
+          <button class="tile" data-detail="detail-umsetzung">
+            <span class="tile-emoji">🛠️</span>
+            <span class="tile-title">Status & Umsetzung</span>
+            <span class="tile-sub">Läuft schon. Wirklich.</span>
+          </button>
+        </div>
+
+        <div class="verdict">
+          <h2>Und, was sagst du?</h2>
+          <div class="btn-row">
+            <button class="btn btn-ghost btn-xl" data-goto="schade">Die Idee ist scheiße 👎</button>
+            <button class="btn btn-primary btn-xl" data-goto="match">Die Idee ist gut 🔥</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SCHADE ===================== -->
+    <section class="screen" id="schade">
+      <div class="container center narrow">
+        <div class="big-emoji">💔</div>
+        <h1>Schade.</h1>
+        <p class="lead">
+          Aber trotzdem danke für deine Zeit.<br>
+          Und Respekt, dass du dir die Seite wirklich bis zum Ende angeschaut hast.
+        </p>
+        <button class="btn btn-ghost" data-goto="crushconnect">Doch nochmal überlegen 🤔</button>
+      </div>
+    </section>
+
+    <!-- ===================== MATCH ===================== -->
+    <section class="screen" id="match">
+      <div class="container center narrow">
+        <div class="big-emoji">🎉</div>
+        <h1>Wusste ich's doch. 😏</h1>
+        <p class="lead">Dann lass uns reden. Schreib mir auf Instagram:</p>
+        <a class="insta-card" href="https://instagram.com/andih97" target="_blank" rel="noopener">
+          <span class="insta-icon">📸</span>
+          <span class="insta-handle">@andih97</span>
+          <span class="insta-cta">DM aufmachen →</span>
+        </a>
+        <p class="footnote">It's a match, Chris. ❤️‍🔥</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== MODAL ===================== -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close title="Schließen">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ===================== DETAIL-TEMPLATES ===================== -->
+  <template id="detail-idee">
+    <span class="detail-emoji">💡</span>
+    <h2>Die Idee</h2>
+    <p class="lead">
+      Zwei Leute stehen aufeinander, aber keiner traut sich, es zu sagen,
+      weil keiner weiß, ob es auf Gegenseitigkeit beruht.<br><b>Genau das löst Crushconnect.</b>
+    </p>
+    <ol class="steps">
+      <li><b>DM schicken.</b> Du schickst <a href="https://instagram.com/crshconnect_de" target="_blank" rel="noopener">@crshconnect_de</a> ganz einfach per Instagram-DM den Namen deines Crushes. Mehr ist es nicht, das Ganze läuft komplett über Instagram.</li>
+      <li><b>Anonym gespeichert.</b> Der Bot merkt sich deinen Crush, ohne dass irgendjemand davon erfährt. Ändern kannst du ihn alle 2 Wochen.</li>
+      <li><b>Match! 💘</b> Trägt dein Crush auch dich ein, benachrichtigt der Bot euch beide automatisch.</li>
+      <li><b>Kein Match?</b> Dann erfährt niemand jemals etwas. Null Risiko, null Peinlichkeit.</li>
+    </ol>
+    <div class="callout">
+      <b>Ego-Feature obendrauf:</b> Einmal im Monat kannst du mit <code>crushcount</code> abfragen,
+      wie viele Leute <i>dich</i> eingetragen haben. Wer genau, bleibt geheim.
+      Perfekt für alle, die nur ihr Ego pushen wollen. 😌
+    </div>
+    <p>
+      Im Endeffekt ist es <b>ein modernes, anonymes Tinder direkt über Instagram</b>.
+      Ohne App-Download, ohne Profil, ohne Swipen. Das gibt es so noch nicht.
+    </p>
+  </template>
+
+  <template id="detail-chris">
+    <span class="detail-emoji">🎯</span>
+    <h2>Warum du, Chris?</h2>
+    <p class="lead">Damit das Konzept funktioniert, ist die Seite auf <b>Reichweite</b> angewiesen.</p>
+    <p>
+      Die Idee kann komplett floppen, wenn sie nicht schnell genug Reichweite bekommt.
+      Sie steht und fällt damit, dass genug Leute mitmachen. Ein Match braucht nun mal zwei.
+    </p>
+    <p>
+      Aber wenn sie sich durchsetzt, kann ich mir gut vorstellen, dass sie richtig gut ankommt.
+      Weil es mal was Neues ist, das es so noch nicht gibt, und ein bisschen frische Luft
+      in die mittlerweile ziemlich monotone Instagram-Welt bringt.
+    </p>
+    <p>
+      Und dabei habe ich an <b>dich</b> gedacht. Vielleicht findest du so ein Projekt ja auch
+      ganz witzig und hast Lust, mit einzusteigen oder einfach zu helfen, das Ding zu pushen.
+    </p>
+    <div class="callout quote">
+      Das Projekt kostet fast nichts, wirft aber auch (noch) keinen Profit ab.
+      Und ehrlich gesagt bist du der Einzige, den ich mir bei so etwas vorstellen kann:
+      jemand, der mitmacht, <b>weil er die Idee cool findet</b> und nicht, weil Geld dabei rausspringt.
+      Das juckt dich sowieso nicht.
+    </div>
+  </template>
+
+  <template id="detail-beispiele">
+    <span class="detail-emoji">💬</span>
+    <h2>Live-Beispiele</h2>
+    <p class="lead">So sieht's aus, wenn man mit dem Bot schreibt:</p>
+    <div class="phone">
+      <div class="phone-head">
+        <span class="avatar">❤️‍🔥</span>
+        <span class="phone-name"><b>crshconnect_de</b><small>Business-Chat · antwortet in Sekunden</small></span>
+      </div>
+      <div class="chat">
+        <div class="msg me">help</div>
+        <div class="msg bot">Diese Kommandos verstehe ich:<br>
+          ▪️ <b>crush NAME</b>: deinen Crush eintragen<br>
+          ▪️ <b>current crush</b>: zeigt deinen aktuellen Crush<br>
+          ▪️ <b>delete crush</b>: löscht deinen Crush<br>
+          ▪️ <b>crushcount</b>: wie viele dich eingetragen haben<br>
+          ▪️ <b>time crush</b>: wann du wieder eintragen darfst<br>
+          ▪️ <b>time crushcount</b>: wann du wieder nachsehen darfst
+        </div>
+        <div class="msg me">crush Juliax999</div>
+        <div class="msg bot">Crush 'Juliax999' ist notiert. Viel Glück 😏</div>
+        <div class="msg me">crushcount</div>
+        <div class="msg bot">2 Leute haben dich angegeben. Mehr könnten es werden, wenn du nett bleibst. 😉</div>
+        <div class="msg me">time crush</div>
+        <div class="msg bot">Erneute Angabe in 6 Tage 23 Std. 56 Min. freigegeben. 🕊️</div>
+        <div class="msg me">delete crush</div>
+        <div class="msg bot">💔 Dein Crush wurde gelöscht.</div>
+        <div class="msg me">Ggs</div>
+        <div class="msg bot">Das habe ich nicht verstanden. 🤔 Schreib "help" für alle Kommandos.</div>
+      </div>
+    </div>
+    <p class="footnote">Der Bot beantwortet alles von selbst und achtet dabei auch auf die Cooldowns.</p>
+    <h3 class="demo-title">Und hier einmal live in Aktion:</h3>
+    <video class="demo-video" src="assets/live-demo.mp4" controls muted playsinline preload="metadata"></video>
+    <p class="footnote">Das Video hat keinen Ton. Reicht aber auch, der Bot redet eh nur schriftlich. 😄</p>
+  </template>
+
+  <template id="detail-umsetzung">
+    <span class="detail-emoji">🛠️</span>
+    <h2>Status & Umsetzung</h2>
+    <p class="lead">Das Ganze ist nicht nur ein Konzept: <b>Es läuft bereits.</b></p>
+    <ul class="checklist">
+      <li>✅ Zwei Instagram-Accounts sind live: <b>@crshconnect_de</b> und <b>@crshconnect</b></li>
+      <li>✅ Dahinter läuft ein Bot, der DMs per API empfängt, auswertet und automatisch beantwortet</li>
+      <li>✅ Crushes landen in einer Datenbank, Matches werden automatisch erkannt und beide Seiten benachrichtigt</li>
+      <li>✅ Cooldowns eingebaut: Crush alle 2 Wochen änderbar, Crushcount 1× im Monat</li>
+    </ul>
+    <div class="callout">
+      <b>Teste es selbst:</b> Schreib <a href="https://instagram.com/crshconnect_de" target="_blank" rel="noopener">@crshconnect_de</a> einfach eine DM.<br>
+      <small>(Funktioniert, solange mein PC nicht abstürzt. Auf dem läuft der Server nämlich aktuell. 😅)</small>
+    </div>
+    <p>
+      Gebaut habe ich das Ganze übrigens <b>vor den Claude-Code-Zeiten</b>, komplett von Hand.
+      Wenn du dabei bist, refactore ich das Konzept einmal sauber und ziehe es
+      mit einem richtigen Server skalierbar auf.
+    </p>
+  </template>
+
+  <canvas id="confetti"></canvas>
+  <script src="js/app.js"></script>
+</body>
+</html>
